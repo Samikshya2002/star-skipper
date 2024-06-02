@@ -3,33 +3,33 @@ import time
 import random
 import math
 
-# Initialize Pygame
+
 pygame.font.init()
 
-# Set window dimensions
+
 WIDTH, HEIGHT = 1000, 800
 
-# Initialize Pygame window
+
 pygame.init()
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption('Star Skipper')
 
-# Load background image
+
 BG = pygame.transform.scale(pygame.image.load('img.jpg'), (WIDTH, HEIGHT))
 
-# Player dimensions and velocity
+
 PLAYER_HEIGHT = 60
 PLAYER_WIDTH = 30
 PLAYER_VEL = 5
 
-# Star dimensions and velocity
+
 STAR_RADIUS = 10
 STAR_VEL = 3
 
-# Load player image
+
 player_img = pygame.transform.scale(pygame.image.load('person.png'), (PLAYER_WIDTH, PLAYER_HEIGHT))
 
-# Font for text rendering
+
 FONT = pygame.font.SysFont('comicsans', 30)
 
 
